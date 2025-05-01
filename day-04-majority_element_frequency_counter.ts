@@ -1,4 +1,4 @@
-function majorityElement(nums: number[]): number {
+function majorityElement_with_map(nums: number[]): number {
   const map = new Map<number, number>();
   for (const num of nums) {
     map.set(num, (map.get(num) || 0) + 1);
