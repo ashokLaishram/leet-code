@@ -22,11 +22,8 @@ function mergeTwoLists(
       current.next = list2;
       list2 = list2.next;
     }
-    current = current.next; // Move the pointer forward
+    current = current.next;
   }
-
-  // Attach remaining nodes
   current.next = list1 !== null ? list1 : list2;
-
   return dummy.next;
 }
