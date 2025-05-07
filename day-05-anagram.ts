@@ -1,4 +1,4 @@
-function isAnagram(s: string, t: string): boolean {
+function isAnagramFinal(s: string, t: string): boolean {
   if (s.length !== t.length) return false;
   let sMap = createMap(s);
   let tMap = createMap(t);
