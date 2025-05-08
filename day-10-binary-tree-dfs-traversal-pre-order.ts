@@ -14,11 +14,11 @@
 
 function preorderTraversal(root: TreeNode | null): number[] {
   if (root === null) return [];
-  let result = [];
+  let result: number[] = [];
   let stack = [root];
   while (stack.length > 0) {
     let popedItem = stack.pop();
-    let value = popedItem.val;
+    let value: number = popedItem.val;
     result.push(value);
     if (popedItem.right) stack.push(popedItem.right);
     if (popedItem.left) stack.push(popedItem.left);
